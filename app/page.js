@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
-import { leaderBoard } from "./utils/leaderboard";
+// import { leaderBoard } from "./utils/leaderboard";
+import { leaderBoardFetch } from "./utils/leaderboardfetch";
 import Cards from "./components/Cards";
 
 export default function Home() {
@@ -9,7 +10,8 @@ export default function Home() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const result = await leaderBoard();
+      // const result = await leaderBoard();
+      const result = await leaderBoardFetch();
       if (result && Array.isArray(result.data)) {
         setData(result.data);
       } else {
