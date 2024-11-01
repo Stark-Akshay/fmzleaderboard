@@ -7,9 +7,13 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        "hero-picture": "url('/fmzbg.webp')",
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        finalsred: "#d21f3c",
       },
     },
   },

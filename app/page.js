@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 // import { leaderBoard } from "./utils/leaderboard";
 import { leaderBoardFetch } from "./utils/leaderboardfetch";
 import Cards from "./components/Cards";
+import Image from "next/image";
 
 export default function Home() {
   const [data, setData] = useState([]);
@@ -24,8 +25,6 @@ export default function Home() {
 
   return (
     <section>
-      <h1 className="text-xl font-bold text-center">FMZ leaderBoard</h1>
-
       <section>
         {error ? (
           <p>{error}</p>

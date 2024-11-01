@@ -1,19 +1,11 @@
 import React from "react";
+import Card from "./Card";
 
 const Cards = ({ data }) => {
-  console.log(data);
   return (
-    <div>
+    <div className="mx-auto">
       {data.map((player, index) => (
-        <div
-          key={index}
-          style={{ border: "1px solid #ccc", margin: "10px", padding: "10px" }}
-        >
-          <h2>Player Name: {player.name}</h2>
-          <p>Rank: {player.rank}</p>
-          <p>Steam Name: {player.steamName || "N/A"}</p>
-          <p>Cashouts: ${player.cashouts.toLocaleString()}</p>
-        </div>
+        <Card player={player} key={index}></Card>
       ))}
     </div>
   );
