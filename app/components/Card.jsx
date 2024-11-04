@@ -13,7 +13,7 @@ const Card = ({ player }, index) => {
 
       <div className="flex flex-col items-end">
         <h2 className="text-white text-xl">{player.name}</h2>
-        <h3 className="text-white text-lg">
+        <h3 className="text-white text-xl">
           ${player.cashouts.toLocaleString()}
         </h3>
       </div>
