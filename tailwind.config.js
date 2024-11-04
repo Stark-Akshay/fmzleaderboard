@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        saira: ["Saira", "sans-serif"],
+      },
       backgroundImage: {
         "hero-picture": "url('/fmzbg.webp')",
       },
@@ -14,6 +17,7 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
         finalsred: "#d21f3c",
+        finalsyellow: "#e8c637",
       },
     },
   },
